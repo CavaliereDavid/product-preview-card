@@ -1,0 +1,159 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  padding: 5%;
+}
+
+#left-side {
+  flex: 1;
+  height: auto;
+  order: 1;
+}
+
+#right-side {
+  flex: 1;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  text-align: left;
+  padding: 20px;
+  border-top-right-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 2;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 2%;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: hsl(212, 21%, 14%);
+  font-size: 40px;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  justify-content: left;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: hsl(228, 12%, 48%);
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: hsl(158, 36%, 37%);
+  text-align: left;
+  align-self: flex-start;
+  font-size: 40px;
+}
+#originalPrice {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 2px;
+  text-align: right;
+  text-decoration: line-through;
+}
+.price {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  justify-content: left;
+  letter-spacing: 2px;
+  background-color: hsl(158, 36%, 37%);
+  padding: 10px;
+  border-radius: 5px;
+  width: 90%;
+  height: 100%;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  display: block;
+  align-items: center;
+  border: none;
+}
+button svg {
+  margin-right: 10px; /* Adjust the value as needed */
+}
+button:active {
+  background-color: hsl(158, 36%, 28%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%; /* Adjust the width to occupy the full width of the screen */
+  }
+
+  body {
+    font-size: small;
+  }
+
+  #left-side {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    order: initial;
+    width: 100%;
+  }
+
+  #right-side {
+    flex: 1;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    text-align: left;
+    border-top-right-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    order: initial;
+    margin-top: -20px; 
+    border-radius: 0%;
+    padding: 20px;
+    
+  }
+
+  h1 {
+    font-size: 24px; 
+  }
+
+  h4 {
+    letter-spacing: 2px; 
+    font-size: 16px; /
+  }
+
+  p {
+    letter-spacing: 1px;
+    font-size: 14px; 
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .price {
+    gap: 10px;
+  }
+  
+}
