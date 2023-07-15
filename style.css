@@ -1,9 +1,114 @@
+/* === Reset and General Styles === */
+
+/* Normalize or reset styles */
 body {
-  background-color: hsl(30, 38%, 92%);
-  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.container {
+/* Global styles */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Typography === */
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* === Header === */
+
+/* Header styles */
+header {
+  background-color: hsl(30, 38%, 92%);
+  padding: 20px;
+}
+
+/* === Navigation === */
+
+/* Navigation styles */
+nav {
+  background-color: hsl(30, 38%, 92%);
+  color: #fff;
+  padding: 10px;
+}
+
+/* Navigation list */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation items */
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+/* Navigation links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* === Main Content === */
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* === Footer === */
+
+/* Footer styles */
+footer {
+  background-color: hsl(30, 38%, 92%);
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* === Media Queries === */
+
+@media (max-width: 768px) {
+  /* Responsive styles for smaller screens */
+  .wrapper {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  header,
+  nav,
+  main,
+  footer {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* === Custom Styles === */
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.wrapper {
   display: flex;
   margin: auto;
   width: 50%;
@@ -23,22 +128,27 @@ body {
   text-align: left;
   padding: 20px;
   border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   order: 2;
 }
+
 img {
   width: 100%;
   height: 100%;
   border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
 }
+
 h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
   letter-spacing: 5px;
 }
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -46,7 +156,9 @@ h1 {
   color: hsl(212, 21%, 14%);
   font-size: 40px;
 }
+
 p {
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   justify-content: left;
@@ -54,6 +166,7 @@ p {
   font-style: normal;
   color: hsl(228, 12%, 48%);
 }
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -63,6 +176,7 @@ h2 {
   align-self: flex-start;
   font-size: 40px;
 }
+
 #originalPrice {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -71,11 +185,13 @@ h2 {
   text-align: right;
   text-decoration: line-through;
 }
+
 .price {
   gap: 20px;
   display: flex;
   align-items: center;
 }
+
 button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -92,15 +208,17 @@ button {
   align-items: center;
   border: none;
 }
+
 button svg {
-  margin-right: 10px; /* Adjust the value as needed */
+  margin-right: 10px;
 }
+
 button:active {
   background-color: hsl(158, 36%, 28%);
 }
 
 @media (max-width: 375px) {
-  .container {
+  .wrapper {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -125,27 +243,27 @@ button:active {
     background-color: hsl(0, 0%, 100%);
     text-align: left;
     border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
     display: flex;
     flex-direction: column;
     order: initial;
-    margin-top: -20px; 
+    margin-top: -20px;
     border-radius: 0%;
     padding: 20px;
-    
   }
 
   h1 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   h4 {
-    letter-spacing: 2px; 
-    font-size: 16px; /
+    letter-spacing: 2px;
+    font-size: 16px;
   }
 
   p {
     letter-spacing: 1px;
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   h2 {
@@ -155,5 +273,4 @@ button:active {
   .price {
     gap: 10px;
   }
-  
 }
